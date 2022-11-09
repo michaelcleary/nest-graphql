@@ -1,4 +1,5 @@
 FROM node:14
+WORKDIR app
 COPY dist/ dist/
 COPY package.json package.json
 COPY yarn.lock yarn.lock
