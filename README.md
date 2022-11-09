@@ -58,6 +58,16 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Deploy
+
+```bash
+# build docker image
+$ docker build -t nest-graphql:0.1.1 .
+
+# start docker container
+$ docker-compose up 
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
