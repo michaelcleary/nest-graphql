@@ -1,0 +1,23 @@
+type Person {
+  id: Int
+  firstName: String
+  lastName: String
+}
+
+input PersonInput {
+  firstName: String
+  lastName: String
+}
+
+type Query {
+  getPerson(id:Int): Person
+}
+
+type Mutation {
+  savePerson(person:PersonInput!): Person
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

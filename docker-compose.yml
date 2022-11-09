@@ -1,0 +1,8 @@
+version: '2.3'
+
+services:
+
+  nestapp:
+    image: nest-graphql:0.1.1
+    ports:
+      - "8000:8000"
